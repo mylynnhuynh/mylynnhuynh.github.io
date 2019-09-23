@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+.banner {
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+background-position: 50% 50%;
+
+position: relative;
+
+width: 100%;
+
+height: auto;
+
+display: block;
+
+}
