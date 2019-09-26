@@ -19,8 +19,25 @@ display: block;
 }
 
 
+#aboutme {
+	
+}
+
+#mprojects {
+   padding-top: 25px;
+   padding-left: 200px;
+   padding-right: 200px;
+   padding-bottom: 25px;
+}
+
+#mgraphics {
+   padding-left: 200px;
+   padding-right: 200px;
+   padding-bottom: 25px;
+}
 
 #mpersonal {
-   padding: 100px;
-   background-color: #deceba;
+   padding-left: 200px;
+   padding-right: 200px;
+   padding-bottom: 25px;
 }
