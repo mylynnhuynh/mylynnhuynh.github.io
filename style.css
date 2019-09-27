@@ -19,12 +19,32 @@ display: block;
 }
 
 
+.carousel .item {
+  height: 200px;
+  width: 250px;
+}
+
+.carousel .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 200px;
+    width: 250px;
+}
+
 #aboutme {
 	
 }
 
+
+#mhello {
+	padding-top: 25px;
+   	padding-left: 200px;
+   	padding-right: 200px;
+  	padding-bottom: 25px;
+}
+
 #mprojects {
-   padding-top: 25px;
    padding-left: 200px;
    padding-right: 200px;
    padding-bottom: 25px;
