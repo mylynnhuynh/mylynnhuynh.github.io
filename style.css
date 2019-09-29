@@ -19,16 +19,26 @@ display: block;
 }
 
 
+
+
 .centered {
     position: absolute;
     top: 50%;
-    left: 32%;
+    left: 25%;
     width: 100%;
 }
 
 h1{
 	color: white;
-	font-size: 4em;
+	font-size: 6vw;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
 }
 
 .carousel .item {
@@ -76,4 +86,31 @@ h1{
    padding-left: 215px;
    padding-right: 200px;
    padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+#newsletters {
+	padding-top: 25px;
+   	padding-left: 212px;
+   	padding-right: 200px;
+  	padding-bottom: 25px;
+}
+
+#apparel {
+	padding-top: 25px;
+   	padding-left: 212px;
+   	padding-right: 200px;
+  	padding-bottom: 25px;
+}
+
+#unknown {
+	padding-top: 25px;
+   	padding-left: 212px;
+   	padding-right: 200px;
+  	padding-bottom: 25px;
 }
