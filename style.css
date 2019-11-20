@@ -19,21 +19,26 @@ display: block;
 }
 
 
-h3{
-	color: white;
-	font-size: 6vw;
-	background-image: url("bg4.jpg");
-	height: 500px;
-	background-size: cover;
-	text-align: center;
-	top: 50%;
+p{
+	font-size: 0.85vw;
 }
 
+
+/*
 .centered {
     position: absolute;
     top: 50%;
     left: 25%;
     width: 100%;
+}
+*/
+.centered2 {
+	
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("bg4.jpg");
 }
 
 h1{
@@ -41,12 +46,16 @@ h1{
 	font-size: 6vw;
 }
 
-h2 {
-  text-align: center;
+h2{
+	text-align: center;
+}
+
+h3 {
+  /*text-align: center;*/
 }
 
 h4 {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .carousel .item {
@@ -65,40 +74,6 @@ h4 {
 #icons{
 	padding-left: 40%;
 }
-
-#aboutme {
-	
-}
-
-
-#mhello {
-	padding-top: 25px;
-   	padding-left: 212px;
-   	padding-right: 200px;
-  	padding-bottom: 25px;
-}
-
-#mprojects {
-   padding-left: 200px;
-   padding-right: 200px;
-   padding-bottom: 25px;
-}
-
-#mgraphics {
-   padding-left: 200px;
-   padding-right: 200px;
-   padding-bottom: 25px;
-}
-
-#mme {
-   padding-left: 215px;
-   padding-right: 200px;
-   padding-bottom: 25px;
-}
-
-
-
-
 
 
 
@@ -121,5 +96,11 @@ h4 {
    	padding-left: 212px;
    	padding-right: 200px;
   	padding-bottom: 25px;
+}
+
+.icons{
+	display: flex;
+	justify-content: center;
+    align-items: center;
 }
 
