@@ -48,6 +48,13 @@ html, body{
     align-items: center;
 }
 
+.padding{
+	padding-bottom: 2rem;
+}
+
+.welcome{
+	padding-top: 2rem;
+}
 
 
 
