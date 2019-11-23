@@ -49,15 +49,29 @@ html, body{
 }
 
 .padding{
+	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
-.welcome{
+.first{
 	padding-top: 2rem;
 }
 
+.welcome hr{
+	border-top: 2px solid #282828;
+	width: 10%;
+	margin-top: 0rem;
+	margin-bottom: 4rem;
+}
 
+.icons i{
+	color: white;
+	background-color: #cfc2a1;
+}
 
+.icons i:hover{
+	background-color: #a1977c;
+}
 
 
 /*
