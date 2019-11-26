@@ -73,8 +73,81 @@ html, body{
 	background-color: #a1977c;
 }
 
+.icons a{
+	padding: 1rem;
+}
+
+
+.aboutme h4{
+	font-size: 160%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.aboutme p{
+	font-size: 100%;
+}
+
+
+footer{
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+}
+
+hr.light{
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+}
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px){
+	.aboutme h4 {
+		font-size: 125%;
+	}
+	.aboutme p {
+		font-size: 80%;
+	}
+}
+@media (max-width: 768px){
+	.aboutme h4 {
+		padding-top: 2rem;
+		font-size: 200%;
+		text-align: center;
+	}
+	.aboutme p {
+		font-size: 100%;
+	}
+}
+@media (max-width: 576px){
+	.aboutme h4 {
+		padding-top: 2rem;
+		font-size: 150%;
+		text-align: center;
+	}
+	.aboutme p {
+		font-size: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 /*
+.short-width{
+	width: 50%;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+
 p{
 	font-size: 0.85vw;
 }
