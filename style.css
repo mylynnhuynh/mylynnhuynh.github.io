@@ -49,12 +49,12 @@ html, body{
 }
 
 .padding{
-	padding-top: 2rem;
+	padding-top: 3rem;
 	padding-bottom: 2rem;
 }
 
 .first{
-	padding-top: 2rem;
+	padding-top: 3rem;
 }
 
 .welcome hr{
@@ -63,6 +63,13 @@ html, body{
 	margin-top: 0rem;
 	margin-bottom: 4rem;
 }
+
+.categories button{
+	color: blue;
+	background-color: red;
+}
+
+
 
 .icons i{
 	color: white;
@@ -74,7 +81,7 @@ html, body{
 }
 
 .icons a{
-	padding: 1rem;
+	padding: 0.25rem;
 }
 
 
