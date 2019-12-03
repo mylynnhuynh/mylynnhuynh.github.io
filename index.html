@@ -99,7 +99,7 @@
 	    		<a href="fabflix.html">
 	       			<img class="img-fluid" src="images/fabflix.jpg" alt="fabflix">
 	       			<div class="overlay">
-    					<div class="text">FABFLIX</div>
+    					<div class="text"><h5>Fabflix</h5></div>
   					</div>
 	       		</a>
 	    	</div>
@@ -107,14 +107,14 @@
 	       		<a href="weather.html">
 	        		<img class="img-fluid" src="images/weather.png" alt="weather">
 	        		<div class="overlay">
-    					<div class="text">WEATHER FORECAST</div>
+    					<div class="text"><h5>Weather Forecast</h5></div>
   					</div>
 	        	</a>
 	        </div>
 	    	<div class="col-md-4 mb-4 image">
-	       		<img class="img-fluid" src="images/placeholder.png" alt="update">
+	       		<img class="img-fluid" src="images/proj3.png" alt="update">
 	       		<div class="overlay">
-    				<div class="text">UPDATING...</div>
+    				<div class="text"><h5>Updating...</h5></div>
   				</div>
 	    	</div>	    	
 	    </div>
@@ -145,10 +145,10 @@
 			<h5 id="graphics-txt">A collection of apparel designs.
 			</h5>
 			<p id="graphics-txt3">
-				One of my favorite things to design is grapgics for apparel. As much as I enjoy the process 
-				and journey of creating, nothing brings me more joy but the end reult: to see my design come 
+				One of my favorite things to design is graphics for apparel. As much as I enjoy the process 
+				and journey of creating, nothing brings me more joy but the end result: to see my design come 
 				to life through seeing people wear them. Take a look at my brainstorming and alternative 
-				designs here. Currently working on updating content... 
+				designs here. * Currently working on updating content... *
 				(Crickhollow Housing Jacket, Healing Jacket, Solar Longsleeves)
 				
 			</p>
@@ -160,16 +160,16 @@
 		<div class="graphics">
 	    <div class="row text-center">
 	       	<div class="col-sm-6 col-md-3 mb-4">
-	        	<img id="one" class="img-fluid" src="images/f.JPG" alt="apparel2">
+	        	<img id="one" class="img-fluid" src="images/apparel/f.JPG" alt="apparel2">
 	        </div>
 	       	<div class="col-sm-6 col-md-3 mb-4">
-	       		<img id="two" class="img-fluid" src="images/a.jpg" alt="mylynn">
+	       		<img id="two" class="img-fluid" src="images/apparel/a.jpg" alt="mylynn">
 	    	</div>
 	    	<div class="col-sm-6 col-md-3 mb-4">
-	       		<img id="three" class="img-fluid" src="images/g.jpg" alt="mylynn">
+	       		<img id="three" class="img-fluid" src="images/apparel/g.jpg" alt="mylynn">
 	    	</div>
 	    	<div class="col-sm-6 col-md-3 mb-4">
-	       		<img id="four" class="img-fluid" src="images/h.jpg" alt="mylynn">
+	       		<img id="four" class="img-fluid" src="images/apparel/h.jpg" alt="mylynn">
 	    	</div> 	
 	    </div>
 	    <div class="row text-center">
@@ -252,21 +252,6 @@
 	-->
 	
 	
-	<figure>
-		<div class="fixed-wrap">
-		<div id="fixed">
-		</div>
-		</div>
-	</figure>
-	
-	<div class="result">
-	
-	</div>
-	<script>
-		$( "#result" ).load( "test.html", data, function() {
-  			alert( "The last 25 entries in the feed have been loaded" );
-		});
-	</script>
 	
 	<!-- Footer -->
 	<footer>
@@ -288,18 +273,18 @@
 
 	<!-- For graphics buttons -->
 	<script>
-			var dsc1 = " One of my favorite things to design is graphics for apparel. As much as I enjoy the process and journey of creating, nothing brings me more joy but the end reult: to see my design come to life through seeing people wear them. Take a look at my brainstorming and alternative designs here. Currently working on updating content... (Crickhollow Housing Jacket, Healing Jacket, Solar Longsleeves)";
+			var dsc1 = " One of my favorite things to design is graphics for apparel. As much as I enjoy the process and journey of creating, nothing brings me more joy but the end result: to see my design come to life through seeing people wear them. Take a look at my brainstorming and alternative designs here. * Currently working on updating content... * (Crickhollow Housing Jacket, Healing Jacket, Solar Longsleeves)";
 			function changeToApparel(){
 				document.getElementById("graphics-txt").innerHTML = "A collection of apparel designs.";
 				document.getElementById("graphics-txt3").innerHTML = dsc1;
 				document.getElementById("graphics-txt2").href = "";
 				document.getElementById("graphics-txt2").innerHTML = "";
 				
-				document.getElementById("one").src = "images/f.JPG";
+				document.getElementById("one").src = "images/apparel/f.JPG";
 				document.getElementById("one").alt = "hunger over easy longsleeve";
-				document.getElementById("two").src = "images/a.jpg";
-				document.getElementById("three").src = "images/g.jpg";
-				document.getElementById("four").src = "images/h.jpg";
+				document.getElementById("two").src = "images/apparel/a.jpg";
+				document.getElementById("three").src = "images/apparel/g.jpg";
+				document.getElementById("four").src = "images/apparel/h.jpg";
 				document.getElementById("five").src = "";
 				document.getElementById("six").src = "";
 			}
@@ -318,9 +303,11 @@
 				document.getElementById("five").src = "images/newsletters/Welcome.png";
 				document.getElementById("six").src = "images/newsletters/spring.png";
 			}
+			
+			var dsc3 = "* Currently Updating... * (Social media banners, cover photos, posts, etc.)";
 			function changeToMedia(){
-				document.getElementById("graphics-txt").innerHTML = "Media.";
-				document.getElementById("graphics-txt3").innerHTML = "Currently Updating...";
+				document.getElementById("graphics-txt").innerHTML = "Social Media.";
+				document.getElementById("graphics-txt3").innerHTML = dsc3;
 				document.getElementById("graphics-txt2").href = "";
 				document.getElementById("graphics-txt2").innerHTML = "";
 				
@@ -331,9 +318,11 @@
 				document.getElementById("five").src = "images/placeholder.png";
 				document.getElementById("six").src = "images/placeholder.png";
 			}
+			
+			var dsc4 = "* Currently Updating... * (flyers, logos, etc.)";
 			function changeToAdvertising(){
 				document.getElementById("graphics-txt").innerHTML = "Advertising.";
-				document.getElementById("graphics-txt3").innerHTML = "Currently Updating...";
+				document.getElementById("graphics-txt3").innerHTML = dsc4;
 				document.getElementById("graphics-txt2").href = "";
 				document.getElementById("graphics-txt2").innerHTML = "";
 				
