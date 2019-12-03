@@ -15,6 +15,7 @@
 	<!--
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	-->
+	<!--#include virtual="test.html" --> 
 </head>
 
 
@@ -94,18 +95,27 @@
 			<hr>
 		</div>  
 	    <div class="row text-center">
-	    	<div class="col-md-4 mb-4">
+	    	<div class="col-md-4 mb-4 image">
 	    		<a href="fabflix.html">
-	       			<img class="img-fluid" src="images/fabflix.jpg" alt="mylynn">
+	       			<img class="img-fluid" src="images/fabflix.jpg" alt="fabflix">
+	       			<div class="overlay">
+    					<div class="text">FABFLIX</div>
+  					</div>
 	       		</a>
 	    	</div>
-	       	<div class="col-md-4 mb-4">
+	       	<div class="col-md-4 mb-4 image">
 	       		<a href="weather.html">
-	        		<img class="img-fluid" src="images/weather.png" alt="apparel2">
+	        		<img class="img-fluid" src="images/weather.png" alt="weather">
+	        		<div class="overlay">
+    					<div class="text">WEATHER FORECAST</div>
+  					</div>
 	        	</a>
 	        </div>
-	    	<div class="col-md-4 mb-4">
-	       		<img class="img-fluid" src="images/placeholder.png" alt="mylynn">
+	    	<div class="col-md-4 mb-4 image">
+	       		<img class="img-fluid" src="images/placeholder.png" alt="update">
+	       		<div class="overlay">
+    				<div class="text">UPDATING...</div>
+  				</div>
 	    	</div>	    	
 	    </div>
 	    <hr class="my-4">     
@@ -122,36 +132,55 @@
 		<div class="row text-center">
 			<div class="col-12">
 				<div class="categories">
-				<button class="ui brown basic button">Apparel</button>
-				<button class="ui brown basic button">Newsletter</button>
-				<button class="ui brown basic button">Media</button>
-				<button class="ui brown basic button">Advertising</button>
+				<button id="apparel" onclick="changeToApparel()" class="ui brown basic button">Apparel</button>
+				<button id="newsletter" onclick="changeToNewsletter()" class="ui brown basic button">Newsletter</button>
+				<button id="media" onclick="changeToMedia()" class="ui brown basic button">Media</button>
+				<button id="advertising" onclick="changeToAdvertising()" class="ui brown basic button">Advertising</button>
 				</div>
 			</div>
 		</div>
 		<br>
+		
+		<div class="text-center">
+			<h5 id="graphics-txt">A collection of apparel designs.
+			</h5>
+			<p id="graphics-txt3">
+				One of my favorite things to design is grapgics for apparel. As much as I enjoy the process 
+				and journey of creating, nothing brings me more joy but the end reult: to see my design come 
+				to life through seeing people wear them. Take a look at my brainstorming and alternative 
+				designs here. Currently working on updating content... 
+				(Crickhollow Housing Jacket, Healing Jacket, Solar Longsleeves)
+				
+			</p>
+			<a id="graphics-txt2" href=""></a>
+		</div>
+		
+		<br>
+		
+		<div class="graphics">
 	    <div class="row text-center">
 	       	<div class="col-sm-6 col-md-3 mb-4">
-	        	<img class="img-fluid" src="images/f.JPG" alt="apparel2">
+	        	<img id="one" class="img-fluid" src="images/f.JPG" alt="apparel2">
 	        </div>
 	       	<div class="col-sm-6 col-md-3 mb-4">
-	       		<img class="img-fluid" src="images/a.jpg" alt="mylynn">
+	       		<img id="two" class="img-fluid" src="images/a.jpg" alt="mylynn">
 	    	</div>
 	    	<div class="col-sm-6 col-md-3 mb-4">
-	       		<img class="img-fluid" src="images/g.jpg" alt="mylynn">
+	       		<img id="three" class="img-fluid" src="images/g.jpg" alt="mylynn">
 	    	</div>
 	    	<div class="col-sm-6 col-md-3 mb-4">
-	       		<img class="img-fluid" src="images/h.jpg" alt="mylynn">
+	       		<img id="four" class="img-fluid" src="images/h.jpg" alt="mylynn">
 	    	</div> 	
 	    </div>
 	    <div class="row text-center">
 	       	<div class="col-sm-6 col-md-3 mb-4">
-	        	<img class="img-fluid" src="images/placeholder.png" alt="apparel2">
+	        	<img id="five" class="img-fluid" src="">
 	        </div>
 	       	<div class="col-sm-6 col-md-3 mb-4">
-	       		<img class="img-fluid" src="images/placeholder.png" alt="mylynn">
+	       		<img id="six" class="img-fluid" src="">
 	    	</div>
 	    	
+	    </div>
 	    </div>
 	    <hr class="my-4">    
 	</div>
@@ -230,6 +259,14 @@
 		</div>
 	</figure>
 	
+	<div class="result">
+	
+	</div>
+	<script>
+		$( "#result" ).load( "test.html", data, function() {
+  			alert( "The last 25 entries in the feed have been loaded" );
+		});
+	</script>
 	
 	<!-- Footer -->
 	<footer>
@@ -248,6 +285,66 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- For graphics buttons -->
+	<script>
+			var dsc1 = " One of my favorite things to design is graphics for apparel. As much as I enjoy the process and journey of creating, nothing brings me more joy but the end reult: to see my design come to life through seeing people wear them. Take a look at my brainstorming and alternative designs here. Currently working on updating content... (Crickhollow Housing Jacket, Healing Jacket, Solar Longsleeves)";
+			function changeToApparel(){
+				document.getElementById("graphics-txt").innerHTML = "A collection of apparel designs.";
+				document.getElementById("graphics-txt3").innerHTML = dsc1;
+				document.getElementById("graphics-txt2").href = "";
+				document.getElementById("graphics-txt2").innerHTML = "";
+				
+				document.getElementById("one").src = "images/f.JPG";
+				document.getElementById("one").alt = "hunger over easy longsleeve";
+				document.getElementById("two").src = "images/a.jpg";
+				document.getElementById("three").src = "images/g.jpg";
+				document.getElementById("four").src = "images/h.jpg";
+				document.getElementById("five").src = "";
+				document.getElementById("six").src = "";
+			}
+			
+			var dsc2 = "During my time in college, I was a board member for a campus org called Circle K International. One of my main duties as the club's News Editor was to create and design newsletters (the graphics, the backgrounds, the typography, etc.) throughout the year to keep our members informed/updated on everything going on within the club. A full look of our published newsletters can be found on:";
+			function changeToNewsletter(){
+				document.getElementById("graphics-txt").innerHTML = "Published newsletters.";
+				document.getElementById("graphics-txt3").innerHTML = dsc2;
+				document.getElementById("graphics-txt2").href = "https://issuu.com/ucicki20172018";
+				document.getElementById("graphics-txt2").innerHTML = "issuu.com";
+				
+				document.getElementById("one").src = "images/newsletters/Members.png";
+				document.getElementById("two").src = "images/newsletters/Winter.png";
+				document.getElementById("three").src = "images/newsletters/Fall.png";
+				document.getElementById("four").src = "images/newsletters/Summer.png";
+				document.getElementById("five").src = "images/newsletters/Welcome.png";
+				document.getElementById("six").src = "images/newsletters/Spring.png";
+			}
+			function changeToMedia(){
+				document.getElementById("graphics-txt").innerHTML = "Media.";
+				document.getElementById("graphics-txt3").innerHTML = "Currently Updating...";
+				document.getElementById("graphics-txt2").href = "";
+				document.getElementById("graphics-txt2").innerHTML = "";
+				
+				document.getElementById("one").src = "images/placeholder.png";
+				document.getElementById("two").src = "images/placeholder.png";
+				document.getElementById("three").src = "images/placeholder.png";
+				document.getElementById("four").src = "images/placeholder.png";
+				document.getElementById("five").src = "images/placeholder.png";
+				document.getElementById("six").src = "images/placeholder.png";
+			}
+			function changeToAdvertising(){
+				document.getElementById("graphics-txt").innerHTML = "Advertising.";
+				document.getElementById("graphics-txt3").innerHTML = "Currently Updating...";
+				document.getElementById("graphics-txt2").href = "";
+				document.getElementById("graphics-txt2").innerHTML = "";
+				
+				document.getElementById("one").src = "images/placeholder.png";
+				document.getElementById("two").src = "images/placeholder.png";
+				document.getElementById("three").src = "images/placeholder.png";
+				document.getElementById("four").src = "images/placeholder.png";
+				document.getElementById("five").src = "images/placeholder.png";
+				document.getElementById("six").src = "images/placeholder.png";
+			}
+		</script>
 
 </body>
 
