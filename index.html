@@ -16,6 +16,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	-->
 	<!--#include virtual="test.html" --> 
+	
+	<!-- For graphics buttons -->
+	<script src="graphicsChange.js"></script>
 </head>
 
 
@@ -130,22 +133,22 @@
 			<hr>
 		</div>
 		<div class="row text-center">
-			<div class="col-xs-6 col-md-3">
+			<div class="col-6 col-sm-3 m-0 p-1">
 				<div class="categories">
 				<button id="apparel" onclick="changeToApparel()" class="ui brown basic button">Apparel</button>
 				</div>
 			</div>
-			<div class="col-xs-6 col-md-3">
+			<div class="col-6 col-sm-3 m-0 p-1">
 				<div class="categories">
 				<button id="newsletter" onclick="changeToNewsletter()" class="ui brown basic button">Newsletter</button>
 				</div>
 			</div>
-			<div class="col-xs-6 col-md-3">
+			<div class="col-6 col-sm-3 m-0 p-1">
 				<div class="categories">
 				<button id="media" onclick="changeToMedia()" class="ui brown basic button">Media</button>
 				</div>
 			</div>
-			<div class="col-xs-6 col-md-3">
+			<div class="col-6 col-sm-3 m-0 p-1">
 				<div class="categories">
 				<button id="advertising" onclick="changeToAdvertising()" class="ui brown basic button">Advertising</button>
 				</div>
@@ -171,24 +174,24 @@
 		
 		<div class="graphics">
 	    <div class="row text-center">
-	       	<div class="col-xs-6 col-md-3 mb-4">
+	       	<div class="col-6 col-md-3 m-0 p-1">
 	        	<img id="one" class="img-fluid" src="images/apparel/f.JPG" alt="apparel2">
 	        </div>
-	       	<div class="col-xs-6 col-md-3 mb-4">
+	       	<div class="col-6 col-md-3 m-0 p-1">
 	       		<img id="two" class="img-fluid" src="images/apparel/a.jpg" alt="mylynn">
 	    	</div>
-	    	<div class="col-xs-6 col-md-3 mb-4">
+	    	<div class="col-6 col-md-3 m-0 p-1">
 	       		<img id="three" class="img-fluid" src="images/apparel/g.jpg" alt="mylynn">
 	    	</div>
-	    	<div class="col-xs-6 col-md-3 mb-4">
+	    	<div class="col-6 col-md-3 m-0 p-1">
 	       		<img id="four" class="img-fluid" src="images/apparel/h.jpg" alt="mylynn">
 	    	</div> 	
 	    </div>
 	    <div class="row text-center">
-	       	<div class="col-xs-6 col-md-3 mb-4">
+	       	<div class="col-6 col-md-3 m-0 p-1">
 	        	<img id="five" class="img-fluid" src="">
 	        </div>
-	       	<div class="col-xs-6 col-md-3 mb-4">
+	       	<div class="col-6 col-md-3 m-0 p-1">
 	       		<img id="six" class="img-fluid" src="">
 	    	</div>
 	    	
@@ -283,69 +286,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-	<!-- For graphics buttons -->
-	<script>
-			var dsc1 = " One of my favorite things to design is graphics for apparel. As much as I enjoy the process and journey of creating, nothing brings me more joy but the end result: to see my design come to life through seeing people wear them. Take a look at my brainstorming and alternative designs here. * Currently working on updating content... * (Crickhollow Housing Jacket, Healing Jacket, Solar Longsleeves)";
-			function changeToApparel(){
-				document.getElementById("graphics-txt").innerHTML = "A collection of apparel designs.";
-				document.getElementById("graphics-txt3").innerHTML = dsc1;
-				document.getElementById("graphics-txt2").href = "";
-				document.getElementById("graphics-txt2").innerHTML = "";
-				
-				document.getElementById("one").src = "images/apparel/f.JPG";
-				document.getElementById("one").alt = "hunger over easy longsleeve";
-				document.getElementById("two").src = "images/apparel/a.jpg";
-				document.getElementById("three").src = "images/apparel/g.jpg";
-				document.getElementById("four").src = "images/apparel/h.jpg";
-				document.getElementById("five").src = "";
-				document.getElementById("six").src = "";
-			}
-			
-			var dsc2 = "During my time in college, I was a board member for a campus org called Circle K International. One of my main duties as the club's News Editor was to create and design newsletters (the graphics, the backgrounds, the typography, etc.) throughout the year to keep our members informed/updated on everything going on within the club. A full look of our published newsletters can be found on:";
-			function changeToNewsletter(){
-				document.getElementById("graphics-txt").innerHTML = "Published newsletters.";
-				document.getElementById("graphics-txt3").innerHTML = dsc2;
-				document.getElementById("graphics-txt2").href = "https://issuu.com/ucicki20172018";
-				document.getElementById("graphics-txt2").innerHTML = "issuu.com";
-				
-				document.getElementById("one").src = "images/newsletters/Members.png";
-				document.getElementById("two").src = "images/newsletters/Winter.png";
-				document.getElementById("three").src = "images/newsletters/Fall.png";
-				document.getElementById("four").src = "images/newsletters/Summer.png";
-				document.getElementById("five").src = "images/newsletters/Welcome.png";
-				document.getElementById("six").src = "images/newsletters/spring.png";
-			}
-			
-			var dsc3 = "* Currently Updating... * (Social media banners, cover photos, posts, etc.)";
-			function changeToMedia(){
-				document.getElementById("graphics-txt").innerHTML = "Social Media.";
-				document.getElementById("graphics-txt3").innerHTML = dsc3;
-				document.getElementById("graphics-txt2").href = "";
-				document.getElementById("graphics-txt2").innerHTML = "";
-				
-				document.getElementById("one").src = "images/placeholder.png";
-				document.getElementById("two").src = "images/placeholder.png";
-				document.getElementById("three").src = "images/placeholder.png";
-				document.getElementById("four").src = "images/placeholder.png";
-				document.getElementById("five").src = "images/placeholder.png";
-				document.getElementById("six").src = "images/placeholder.png";
-			}
-			
-			var dsc4 = "* Currently Updating... * (flyers, logos, etc.)";
-			function changeToAdvertising(){
-				document.getElementById("graphics-txt").innerHTML = "Advertising.";
-				document.getElementById("graphics-txt3").innerHTML = dsc4;
-				document.getElementById("graphics-txt2").href = "";
-				document.getElementById("graphics-txt2").innerHTML = "";
-				
-				document.getElementById("one").src = "images/placeholder.png";
-				document.getElementById("two").src = "images/placeholder.png";
-				document.getElementById("three").src = "images/placeholder.png";
-				document.getElementById("four").src = "images/placeholder.png";
-				document.getElementById("five").src = "images/placeholder.png";
-				document.getElementById("six").src = "images/placeholder.png";
-			}
-		</script>
+	
 
 </body>
 
