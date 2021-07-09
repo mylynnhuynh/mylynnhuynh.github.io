@@ -140,7 +140,14 @@ hr.light{
   padding: 16px 32px;
 }
 
+.ui.basic.brown.button {
+	width: 100%;
+}
 
+.ui.basic.brown.button:hover {
+	color: #fff !important;
+	background-color: #a5673f !important;
+}
 
 
 
