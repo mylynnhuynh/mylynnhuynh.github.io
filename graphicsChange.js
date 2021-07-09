@@ -15,7 +15,7 @@ function changeToApparel(){
 }
 			
 
-var dsc2 = "During my time in college, I was a board member for a campus org called Circle K International. One of my main duties as the club's News Editor was to create and design newsletters (the graphics, the backgrounds, the typography, etc.) throughout the year to keep our members informed/updated on everything going on within the club. A full look of our published newsletters can be found on:";
+var dsc2 = "During my time in college, I was a board member for a campus org called Circle K International. One of my main duties as the club's Media Chair was to create and design newsletters (the graphics, backgrounds, typography, etc.) throughout the year to keep our members informed/updated on everything going on within the club. A full look of our published newsletters can be found on:";
 function changeToNewsletter() {
 	document.getElementById("graphics-txt").innerHTML = "Published newsletters.";
 	document.getElementById("graphics-txt3").innerHTML = dsc2;
