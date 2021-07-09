@@ -20,6 +20,7 @@ function changeToNewsletter() {
 	document.getElementById("graphics-txt").innerHTML = "Published newsletters.";
 	document.getElementById("graphics-txt3").innerHTML = dsc2;
 	document.getElementById("graphics-txt2").href = "https://issuu.com/ucicki20172018";
+	document.getElementById("graphics-txt2").target = "_blank";
 	document.getElementById("graphics-txt2").innerHTML = "issuu.com";
 
 	document.getElementById("one").src = "images/newsletters/Members.png";
